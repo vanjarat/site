@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SARL is a general-purpose agent-oriented language.
+SARL aims at providing the fundamental abstractions for dealing with concurrency, distribution, interaction, decentralization, reactivity, autonomy and dynamic reconfiguration. These high-level features are now considered as the major requirements for an easy and practical implementation of modern complex software applications. We are convinced that the agent-oriented paradigm holds the keys to effectively meet this challenge.
+Considering the variety of existing approaches and meta-models in the field of agent-oriented engineering and more generally multi-agent systems, our approach remains as generic as possible and highly extensible to easily integrate new concepts and features. The language is platform- and architecture-independent.
+">
+    <meta name="author" content="SARL Team">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>SARL</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>-->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/licbs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+<!--Navbar Menu-->
+<nav class="navbar navbar-fixed-top" style="background-color: white; z-index:1;">
+    <div class="container-fluid">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-left">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-info btn-sm" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">
+                        <div class="icon-bar"></div>
+                        <div class="icon-bar"></div>
+                        <div class="icon-bar"></div>
+
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="/download.html">Download</a></li>
+                        <li><a href="#">Run-time</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="/new.html">News & Events</a></li>
+                        <li><a href="#">Publications & Presentations</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <a href="https://github.com/sarl/sarl" target="_blank"><img
+            style="position: absolute; top: 0; right : 0; border: 0; z-index: 1000;"
+            src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67"
+            alt="Fork me on GitHub"
+            data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+</div>
+<!--First bloc-->
+<div class="jumbotron">
+    <b><h1 class="text-center" style="font-size:60px;">SARL</h1></b>
+    <p class="text-center">General-purpose Agent-Oriented Programming Language.</p>
+</div>
+<!--2 buttons Download and Documentation -->
+<div class="large_content blocs">
+    <div class="row">
+        <div class="col-md-6 bloc_download flexbox"><h2><a href="#"><span>Download</span></a></h2></div>
+        <div class="col-md-6 bloc_documentation flexbox"><h2><a href="#"><span>Documentation</span></a></h2>
+        </div>
+    </div>
+</div>
+<div id="container_ckeditor_3">
+    <div class="centre"></div>
+</div>
+
+<div class="container marketing">
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="img-circle" src="images/java-logo-140.png" alt="Java Interoperability">
+            <h2>Java Interoperability</h2>
+            <p>SARL code is ultimately translated to JVM bytecode. You can create Java objects, call their methods
+                transparently from SARL Agents.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="img-circle" src="images/eclipse-logo-140.png" alt="Eclipse Plugin">
+            <h2>Advanced IDE Support</h2>
+            <p>SARL SDK provides full integration with the Eclipse Java IDE and giving a great user experience with all
+                expected features, such as auto-completion, syntax highlighting and synt more.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <a href="https://github.com/sarl/sarl"><img class="img-circle" src="images/github-140.png"
+                                                        alt="Fork us on github"></a>
+            <h2>Open Source</h2>
+            <p>SARL tooling is released under <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License
+                Version 2.0</a> giving you flexibility to develop your projects.</p>
+            <p style="text-align:right"><a class="btn btn-default" href="https://github.com/sarl/sarl" role="button">View
+                details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div>
+
+
+    <!-- START THE FEATURETTES -->
+    <!--Section of text and image with parallax effect : 4 row (1 image and 1 bloc of text by row)-->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette vertical-align" style="flex-direction :row-reverse;">
+        <div class="col-md-6 parallax" style="background-image: url('images/imagesite.jpg');"></div>
+        <div class="col-md-6 bloc-text">
+            <h2 class="featurette-heading">Intuitive Syntax.<span class="text-muted"> Develop faster.</span></h2>
+
+            <p class="lead">SARL is develop on top of Xtext and Xbase and inherits great features like extension
+                methods, closures and much more.
+                Create agents faster with an intuitive syntax that lets you concentrate on your Multiagent System, not
+                the framework.</p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette vertical-align">
+        <div class="col-md-6 parallax" style="background-image: url('images/img-code.png');"></div>
+        <div class="col-md-6 bloc-text">
+            <h2 class="featurette-heading">Extensible Agent Features. <span class="text-muted">Keep it DRY</span></h2>
+            <p class="lead">
+                SARL define reusable components to describe what the agent is able to do using Capacities and Skills.
+                Easily reuse agent capacities and behaviors between agents, modules or entire applications.
+                Profit from <b>uses</b> clause to extend your agent easily.
+
+            </p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette vertical-align" style="flex-direction :row-reverse;">
+        <div class="col-md-6 parallax" style="background-image: url('images/holonic.png');"></div>
+
+        <div class="col-md-6 bloc-text">
+            <h2 class="featurette-heading">True Holonic Agents. <span class="text-muted">The whole is greater than the sum of its parts.</span>
+            </h2>
+            <p class="lead">
+                SARL Agents are in fact holons. This lets you create agents composed of other agents possibly providing
+                its parent with new capacities. <b>Yes, capacities can emerge for the members interactions!</b>
+            </p>
+        </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette vertical-align">
+        <div class="col-md-6 parallax" style="background-image: url('images/img-web.jpg');"></div>
+        <div class="col-md-6 bloc-text">
+            <h2 class="featurette-heading">Fully Distributed MAS. <span
+                    class="text-muted">Janus Platform for SARL.</span></h2>
+            <p class="lead"><a href="http://www.janusproject.io">Janus</a> is an open-source multi-agent platform fully
+                implemented in Java 1.8. <a href="http://www.janusproject.io">Janus</a> enables developers to quickly
+                create web, enterprise and desktop multiagent-based applications. It provides a comprehensive set of
+                features to develop, run, display and monitor multiagent-based applications. Janus-based applications
+                can be distributed across a network. <a href="http://www.janusproject.io">Janus</a> could be used as an
+                agent-oriented platform, an organizational platform. It also natively manages the concept of recursive
+                agents or holons.</p>
+        </div>
+    </div>
+</div>
+
+
+<!--CARD footer of page-->
+<!--4 card all with one front and one back-->
+<div class="wrapper-card">
+    <div class="cols">
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-card">
+                <div class="front-card">
+                    <div class="inner">
+                        <p>SARL</p>
+                        <span>Agent-Oriented Programming Language</span>
+                    </div>
+                </div>
+                <div class="back-card">
+                    <div class="inner">
+                        <img src="images/SARL-logo.png" style="width:30%;max-width:64px;"/><br/>
+                        <small><a href="images/SARL-logo.png">png</a>&nbsp;&middot;&nbsp;<a href="images/SARL-logo.svg">svg</a>
+                        </small>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-card">
+                <div class="front-card">
+                    <div class="inner">
+                        <p><i class="glyphicon glyphicon-th-large"></i> Quick Links</p>
+                    </div>
+                </div>
+                <div class="back-card">
+                    <div class="inner">
+                        <p>
+                            <a href="../../../news/index.html">
+                                <i class="fa fa-feed"></i> News
+                            </a>
+                            <br><br>
+                            <a href="../../../about/index.html">
+                                <i class="fa fa-info"></i> About
+                            </a>
+                            <br><br>
+                            <a href="../../../about/index.html#license">
+                                <i class="fa fa-legal"></i> License
+                            </a><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-card">
+                <div class="front-card">
+                    <div class="inner">
+                        <p><i class="glyphicon glyphicon-cog"></i> Support</p>
+                    </div>
+                </div>
+                <div class="back-card">
+                    <div class="inner">
+                        <p>
+                            <a href="../../../community/forums.html">
+                                <i class="fa fa-comments"></i> User Forums
+                            </a>
+                            <br><br>
+                            <a href="https://gitter.im/sarl/Lobby" target="_blank">
+                                <i class="fa fa-wechat"></i> Chat Room
+                            </a>
+                            <br><br>
+                            <a href="https://github.com/sarl/sarl" target="_blank">
+                                <i class="fa fa-github"></i> GitHub
+                            </a>
+                            <br><br>
+                            <a href="https://github.com/sarl/sarl/issues" target="_blank">
+                                <i class="fa fa-bug"></i> Report an Issue
+                            </a>
+                            <br><br>
+                            <a href="https://www.facebook.com/sarllanguage" target="_blank">
+                                <i class="fa fa-facebook"></i> Facebook
+                            </a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-card">
+                <div class="front-card">
+                    <div class="inner">
+                        <p><i class="glyphicon glyphicon-link"></i> Links</p>
+                    </div>
+                </div>
+                <div class="back-card">
+                    <div class="inner">
+                        <p>
+                            <a href="http://www.janusproject.io" target="_blank"><i class="fa fa-gears"></i> Janus
+                                Project</a>
+                            <br><br>
+                            <a href="http://www.gitia.org" target="_blank"><i class="fa fa-university"></i> GITIA - FRT
+                                - UTN</a>
+                            <br><br>
+                            <a href="http://www.multiagent.fr" target="_blank"><i class="fa fa-university"></i> MAS
+                                Group - LE2I - UBFC</a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<hr class="featurette-divider">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/run_prettify.js"></script>
+
+
+<!-- /END THE FEATURETTES -->
+
+
+</body>
+</html>

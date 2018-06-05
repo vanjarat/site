@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SARL is a general-purpose agent-oriented language.
+SARL aims at providing the fundamental abstractions for dealing with concurrency, distribution, interaction, decentralization, reactivity, autonomy and dynamic reconfiguration. These high-level features are now considered as the major requirements for an easy and practical implementation of modern complex software applications. We are convinced that the agent-oriented paradigm holds the keys to effectively meet this challenge.
+Considering the variety of existing approaches and meta-models in the field of agent-oriented engineering and more generally multi-agent systems, our approach remains as generic as possible and highly extensible to easily integrate new concepts and features. The language is platform- and architecture-independent.
+">
+    <meta name="author" content="SARL Team">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>SARL</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>-->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/licbs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-info btn-sm" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">
+                        <div class="icon-bar"></div>
+                        <div class="icon-bar"></div>
+                        <div class="icon-bar"></div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="/download.html">Download</a></li>
+                        <li><a href="#">Run-time</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="/new.html">News & Events</a></li>
+                        <li><a href="#">Publications & Presentations</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <a href="https://github.com/sarl/sarl" target="_blank"><img
+            style="position: absolute; top: 0; right : 0; border: 0; z-index: 1000;"
+            src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67"
+            alt="Fork me on GitHub"
+            data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+</div>
+
+<div class="container">
+    <div class="row transparent">
+        <div class="col-md-12">
+            <!--Card of Download page : each card the class is "tuyin"+ number of this card-->
+            <!--1st card-->
+            <div class="tuyin one">
+                <span class="title">Download Options</span>
+                <div class="plan-name">SARL Development Environment<br>Version 0.7.2 (stable)<br> <span>Just Download and Unzip<br><a
+                        href="./changes_0.7.2.html">Changes in 0.7.2</a></span></div>
+                <div class="text">
+                    <!--First button for link to download (operating system use by user)-->
+                    <a
+                            class="btn btn-success"
+                            style="width: 45%; color: white; font-weight: 500;"
+                            id="system1"
+                    ></a><br>
+                    <span class="btn btn-note" style="width: 45%;">
+                        <a class="link" id="md5-1">md5</a>&nbsp;&middot;&nbsp;<a class="link" id="sha1-1">sha1</a>
+                    </span>
+                </div>
+                <!--2nd button of principal link to download-->
+                <a
+                        type="button" class="btn btn-primary"
+                        style="width: 20%;"
+                        id="system2">
+                </a>
+                <!--3rd button of principal link to download-->
+                <a
+                        class="btn btn-primary"
+                        style="width: 20%;"
+                        id="system3">
+                </a>
+                <!--4th button of principal link to download-->
+                <a
+                        class="btn btn-primary"
+                        style="width: 20%;"
+                        id="system4">
+                </a>
+                <!--5th button of principal link to download-->
+                <a
+                        class="btn btn-primary"
+                        style="width: 20%;"
+                        id="system5">
+                </a>
+                <br>
+                <!--2nd button of not principal link to download-->
+                <span class="btn btn-note" style="width: 20%;">
+                        <a id="md5-2">md5</a>&nbsp;&middot;&nbsp;<a id="sha1-2">sha1</a>
+                    </span>
+                <!--3rd button of not principal link to download-->
+                <span class="btn btn-note" style="width: 20%;">
+                        <a id="md5-3">md5</a>&nbsp;&middot;&nbsp;<a id="sha1-3">sha1</a>
+                    </span>
+                <!--4th button of not principal link to download-->
+                <span class="btn btn-note" style="width: 20%;">
+                        <a id="md5-4">md5</a>&nbsp;&middot;&nbsp;<a id="sha1-4">sha1</a>
+                    </span>
+                <!--5th button of not principal link to download-->
+                <span class="btn btn-note" style="width: 20%;">
+                        <a id="md5-5">md5</a>&nbsp;&middot;&nbsp;<a id="sha1-5">sha1</a>
+                    </span><br><br>
+                <td style="text-align: center; white-space: nowrap; font-family: Helvetica">
+                    <a href="https://drive.google.com/open?id=14Rqx8GyYvtd2LNxZsiECuc48uPRTQz6I"><i>Download older
+                        version</i></a>
+                </td>
+            </div>
+        </div>
+        <!--2nd card-->
+        <div class="col-md-12">
+            <div class="tuyin two">
+                <span class="title">Installation Instructions</span>
+                <div class="text">
+                    <p>
+                        SARL is implemented in Java, so you must have a <a
+                            href="http://www.oracle.com/technetwork/java/index.html" target="_blank"><i
+                            class="fa fa-coffee"></i> Java Runtime Environment 1.8 or higher</a> installed in order to
+                        compile and execute.
+                        <br><br>
+                        There are two easy ways to get SARL up and running.
+                        A pre-configured Eclipse distribution is available which has already all the necessary plug-ins
+                        installed.
+                        Alternatively, you can install SARL SDK into your existing Eclipse using the Eclipse update
+                        mechanism.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--3rd card-->
+        <div class="col-md-6">
+            <div class="tuyin three">
+                <span class="title">Install Pre-Configured Eclipse with SARL SDK</span>
+                <div class="text">
+                    <p>
+                    <ol>
+                        <li>
+                            Download the distribution from above that matches your OS.
+                        </li>
+                        <li>Unzip the archive into the directory of your choice. Windows Users should choose a directory
+                            close to the root since the zip contains a deeply nested folder structure. The maximum path
+                            length on windows may not exceed 256 characters.
+                        </li>
+                        <li>Launch Eclipse and select the workspace location. A workspace location is the directory for
+                            your user data and project files.
+                        </li>
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--4th card-->
+        <div class="col-md-6">
+            <div class="tuyin four">
+                <span class="title">Maven Support</span>
+                <div class="text">
+                    <br>
+                    <p>You can also compile SARL code using <a href="http://maven.apache.org" target="_blank"><i
+                            class="fa fa-maxcdn"></i> Maven</a>.
+                        <br><br>
+                        The configuration of Maven is given in the tutorial "<a
+                                href="{{ page.relative }}docs/official/gettingstarted/CreateFirstProject.html#2-create-a-sarl-project-with-maven">Create
+                            First Project</a>".
+                        <br><br>
+                        The lastest version numbers could be obtain from the <a href="http://search.maven.org"
+                                                                                target="_blank"><i
+                                class="fa fa-maxcdn"></i> Maven Central Repository</a>, or from the <a
+                                href="http://maven.sarl.io" target="_blank"><i class="fa fa-maxcdn"></i> Maven
+                            repositories of SARL</a>.
+                        <br><br><br>
+                        <a href="http://search.maven.org/#search%7Cga%7C1%7Cio.sarl" target="_blank"><img
+                                style="height:30px;"
+                                src="https://img.shields.io/maven-central/v/io.sarl.maven/io.sarl.maven.sdk.svg?label=Available%20on%20Maven%20Central"/></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--5th card-->
+        <div class="col-md-6">
+            <div class="tuyin five">
+                <span class="title">Download the Java Library for Janus Run-time Environment</span>
+                <div class="text">
+                    <p>
+                        The <a href="{{page.relative}}/runtime/janus/index.html">Janus run-time environment</a> is
+                        already included into the SARL product that could be downloaded above. Nevertheless, you could
+                        download the Janus platform by clicking on the following link :
+                    <ul><br>
+                        <li>Janus run-time environment : <a
+                                onclick="ga('send','event','Downloads','Download', 'Janus')"
+                                href="http://central.maven.org/maven2/io/janusproject/io.janusproject.kernel/{{site.janus_stable_version}}/io.janusproject.kernel-{{site.janus_stable_version}}-with-dependencies.jar">on
+                            Maven Central</a>.
+                        </li>
+                    </ul>
+                    </p>
+                    <p><a href="http://search.maven.org/#search%7Cga%7C1%7Cio.janusproject" target="_blank"><img
+                            style="height:30px;"
+                            src="https://img.shields.io/maven-central/v/io.janusproject/io.janusproject.kernel.svg?label=Available%20on%20Maven%20Central"/></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--6th card-->
+        <div class="col-md-6">
+            <div class="tuyin six">
+                <span class="title">Command line tools</span>
+                <div class="text">
+                    <br>
+                    <p>
+                        Several command-line tools could be dowloaded with the following links.
+                        <br><br>
+                    <ul>
+                        <li>SARL compiler : <a
+                                onclick="ga('send','event','Downloads','Download', 'Sarlc Windows')"
+                                href="http://maven.sarl.io/io/sarl/io.sarl.lang.sarlc/{{site.sarl_stable_version}}/io.sarl.lang.sarlc-{{site.sarl_stable_version}}.exe"><i
+                                class="fa fa-windows"></i> Windows</a>, <a
+                                onclick="ga('send','event','Downloads','Download', 'Sarlc Linux')"
+                                href="http://maven.sarl.io/io/sarl/io.sarl.lang.sarlc/{{site.sarl_stable_version}}/io.sarl.lang.sarlc-{{site.sarl_stable_version}}.sh"><i
+                                class="fa fa-linux"></i> Linux</a>, <a
+                                onclick="ga('send','event','Downloads','Download', 'Sarlc MacOS')"
+                                href="http://maven.sarl.io/io/sarl/io.sarl.lang.sarlc/{{site.sarl_stable_version}}/io.sarl.lang.sarlc-{{site.sarl_stable_version}}.dmg"><i
+                                class="fa fa-apple"></i> OS X</a>.
+                        </li>
+                        <br>
+                        <li>Janus run-time environment : <a
+                                onclick="ga('send','event','Downloads','Download', 'Janus Windows')"
+                                href="http://maven.sarl.io/io/janusproject/io.janusproject.kernel/{{site.janus_stable_version}}/io.janusproject.kernel-{{site.janus_stable_version}}.exe"><i
+                                class="fa fa-windows"></i> Windows</a>, <a
+                                onclick="ga('send','event','Downloads','Download', 'Janus Linux')"
+                                href="http://maven.sarl.io/io/janusproject/io.janusproject.kernel/{{site.janus_stable_version}}/io.janusproject.kernel-{{site.janus_stable_version}}.sh"><i
+                                class="fa fa-linux"></i> Linux</a>, <a
+                                onclick="ga('send','event','Downloads','Download', 'Janus MacOS')"
+                                href="http://maven.sarl.io/io/janusproject/io.janusproject.kernel/{{site.janus_stable_version}}/io.janusproject.kernel-{{site.janus_stable_version}}.dmg"><i
+                                class="fa fa-apple"></i> OS X</a>.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--7th card-->
+        <div class="col-md-12">
+            <div class="tuyin seven">
+                <span class="title">Debian and Ubuntu Packages</span>
+                <div class="text">
+                    <br>
+                    <p>The command-line tools are also packaged for the <a href="http://www.arakhne.org/sarl/"
+                                                                           target="_blank"><i class="fa fa-linux"></i>
+                        Debian and Ubuntu operating systems</a>.
+                        The process for including the Debian/Ubuntu package repository into your system's configuration
+                        is explained on the <a href="http://www.arakhne.org/ubuntu.html" target="_blank"><i
+                                class="fa fa-linux"></i> Arakhn&ecirc;.org website</a>.
+
+                </div>
+            </div>
+        </div>
+        <!--8th card-->
+        <div class="col-md-12">
+            <div class="tuyin eight">
+                <span class="title">Install SARL SDK From Update Site </span>
+                <div class="plan-name">(not recommended)</div>
+                <div class="text">
+
+                    <p>If you have an Eclipse running :</p>
+
+                    <ol>
+
+                        <li>Choose <b>Help -> Install New Software...</b> from the menu bar and <b>Add...</b> Insert one
+                            of the update site URLs (<a href="http://updates.sarl.io/composite/releases" target="blank">
+                                http://updates.sarl.io/composite/releases </a>, or <a
+                                    href="http://updates.sarl.io/composite/snapshots" target="blank">http://updates.sarl.io/composite/snapshots</a>).
+                            This site aggregates all the necessary and optional components and dependencies of SARL.
+                        </li>
+                        <li>Select the <b>SARL Language Definition</b> and the <b>SARL Development Kit</b> from the
+                            category SARL, and complete the wizard by clicking the Next button until you can click
+                            Finish.
+                        </li>
+                        <li>After a quick download and a restart of Eclipse, SARL is ready to use.</li>
+                    </ol>
+
+                    <p><span class="label label-info">Note</span> We recommend to use Eclipse Neon.1.</p>
+
+                </div>
+            </div>
+        </div>
+        <!--9th card-->
+        <div class="col-md-12">
+            <div class="tuyin nine">
+                <span class="title">Getting the Source Code</span>
+                <div class="text">
+                    <p>The source code of SARL is available on <a href="https://github.com/{{ site.github_username }}"
+                                                                  target="_blank"><i class="fa fa-github"></i>
+                        Github</a>.</p>
+                    <br>
+                    <p>You could get the source code by cloning the GIT repository :</p><br>
+                    <pre class="prettyprint"><code>git clone https://github.com/sarl/sarl.git</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--CARD Bas de la page-->
+<div class="wrapper-card">
+    <div class="cols">
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-card">
+                <div class="front-card">
+                    <div class="inner">
+                        <p>SARL</p>
+                        <span>Agent-Oriented Programming Language</span>
+                    </div>
+                </div>
+                <div class="back-card">
+                    <div class="inner">
+                        <img src="images/SARL-logo.png" style="width:30%;max-width:64px;"/><br/>
+                        <small><a href="images/SARL-logo.png">png</a>&nbsp;&middot;&nbsp;<a href="images/SARL-logo.svg">svg</a>
+                        </small>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-card">
+                <div class="front-card">
+                    <div class="inner">
+                        <p><i class="glyphicon glyphicon-th-large"></i> Quick Links</p>
+                    </div>
+                </div>
+                <div class="back-card">
+                    <div class="inner">
+                        <p>
+                            <a href="../../../news/index.html">
+                                <i class="fa fa-feed"></i> News
+                            </a>
+                            <br><br>
+                            <a href="../../../about/index.html">
+                                <i class="fa fa-info"></i> About
+                            </a>
+                            <br><br>
+                            <a href="../../../about/index.html#license">
+                                <i class="fa fa-legal"></i> License
+                            </a><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-card">
+                <div class="front-card">
+                    <div class="inner">
+                        <p><i class="glyphicon glyphicon-cog"></i> Support</p>
+                    </div>
+                </div>
+                <div class="back-card">
+                    <div class="inner">
+                        <p>
+                            <a href="../../../community/forums.html">
+                                <i class="fa fa-comments"></i> User Forums
+                            </a>
+                            <br><br>
+                            <a href="https://gitter.im/sarl/Lobby" target="_blank">
+                                <i class="fa fa-wechat"></i> Chat Room
+                            </a>
+                            <br><br>
+                            <a href="https://github.com/sarl/sarl" target="_blank">
+                                <i class="fa fa-github"></i> GitHub
+                            </a>
+                            <br><br>
+                            <a href="https://github.com/sarl/sarl/issues" target="_blank">
+                                <i class="fa fa-bug"></i> Report an Issue
+                            </a>
+                            <br><br>
+                            <a href="https://www.facebook.com/sarllanguage" target="_blank">
+                                <i class="fa fa-facebook"></i> Facebook
+                            </a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-card">
+                <div class="front-card">
+                    <div class="inner">
+                        <p><i class="glyphicon glyphicon-link"></i> Links</p>
+                    </div>
+                </div>
+                <div class="back-card">
+                    <div class="inner">
+                        <p>
+                            <a href="http://www.janusproject.io" target="_blank"><i class="fa fa-gears"></i> Janus
+                                Project</a>
+                            <br><br>
+                            <a href="http://www.gitia.org" target="_blank"><i class="fa fa-university"></i> GITIA - FRT
+                                - UTN</a>
+                            <br><br>
+                            <a href="http://www.multiagent.fr" target="_blank"><i class="fa fa-university"></i> MAS
+                                Group - LE2I - UBFC</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/run_prettify.js"></script>
+<script src="js/system.js">
+
+</script>
+
+
+<!-- /END THE FEATURETTES -->
+
+
+</body>
+</html>

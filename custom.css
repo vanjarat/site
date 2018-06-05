@@ -1,0 +1,1065 @@
+body {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/*--------------DEBUT CSS NAV BAR---------------------*/
+div .icon-bar {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+.nav>li>a:hover,.dropdown-menu>li>a:hover, .nav>li>a:focus{
+    background-color: rgba(255, 131, 2, 0.66);
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus,.dropdown-menu,  .open .dropdown-toggle.btn-info {
+    background-color: white;
+}
+
+.btn-info{
+    background-color : white;
+}
+
+.dropdown-menu li a{
+    color: black;
+    font-size : 20px;
+}
+
+.container-fluid>.navbar-collapse{
+    margin-left: -15px;
+}
+
+
+
+/*---DEBUT CSS CARD OF FOOTER------*/
+
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper-card{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 80rem;
+  opacity: 0.9;
+}
+
+.cols{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col{
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.container-card{
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
+}
+
+.front-card,
+.back-card{
+  background-size: cover;
+	background-position: center;
+	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	text-align: center;
+	min-height: 280px;
+	height: auto;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.back-card{
+  background: white;
+}
+
+.front-card:after{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: 0.9;
+    background-color: white;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 4px;
+}
+.container-card:hover .front-card,
+.container-card:hover .back-card{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+            perspective: inherit;
+    z-index: 2;
+}
+
+.container-card .back-card{
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container-card .front-card{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container-card:hover .back-card{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container-card:hover .front-card{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front-card .inner p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  text-align : center;
+  color: black;
+}
+
+.front-card .inner p:after{
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #C6D4DF;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+
+.front-card .inner span{
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: 200;
+}
+/*---END CSS CARD OF FOOTER ------*/
+
+/*--------------DEBUT CSS PAGE HOME---------------------*/
+p:nth-of-type(1){
+    margin: 0;
+}
+
+h1:nth-of-type(1){
+    margin-top: 0;
+    padding-top: 40px;
+    font-size: 50px;
+}
+
+.large_content blocs {
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+
+.jumbotron{
+    background-color: rgba(148, 148, 148, 0.12);
+    margin-bottom: 0;
+    padding: 48px 0;
+    margin-left: 170px;
+    margin-right: 170px;
+}
+.jumbotron > * {
+    margin-top : 25px;
+}
+
+.bloc_download{
+    min-height: 150px;
+    padding-left: 200px;
+}
+
+.bloc_documentation {
+    min-height: 150px;
+    padding-right: 200px;
+}
+
+.large_content h2 span {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 20px;
+
+}
+.large_content .flexbox h2 {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 7px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    width: 30%;
+}
+
+.parallax {
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.large_content .flexbox:hover h2 {
+    box-shadow: 450px 0 0 0 rgba(227, 199, 133, 0.3) inset, -450px 0 0 0 rgba(227, 199, 133, 0.7) inset;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.large_content .bloc_download h2, .large_content .bloc_documentation h2 {
+    background-color: rgba(255, 131, 2, 0.66);
+    border-radius: 3px;
+}
+
+.large_content h2 a{
+    color: white;
+}
+
+.large_content h2 span {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 20px;
+
+}
+.large_content .flexbox h2 {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 7px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all 1.3s;
+}
+
+.col-lg-4 {
+  color: #ebebeb;
+}
+
+.col-lg-4 a {
+  color: #df691a;
+}
+
+.marketing .col-lg-4 {
+  color: #333333;
+}
+
+.marketing .col-lg-4 a.btn {
+  color: #df691a;
+  background-color: white;
+}
+
+.marketing .col-lg-4 p {
+  text-align: center;
+}
+
+img {
+  max-width: 95%;
+}
+
+.bloc-text h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size : 35px;
+    text-align: center;
+}
+
+.bloc-text p{
+    font-size: 21px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+
+}
+.row{
+    padding-bottom: 0;
+    margin: 0;
+}
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  vertical-align: top;
+}
+
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+        background-color: rgba(255, 131, 2, 0.66);
+}
+
+
+.dropdown-item{
+    width: 200px;
+}
+
+p {
+  text-align: justify;
+}
+
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding: 50px 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  vertical-align: top;
+}
+
+.featurette-image {
+  vertical-align: top;
+}
+
+/*---END CSS PAGE HOME ------*/
+
+/* ----DEBUT CSS DOWNLOAD ----*/
+
+.btn-primary{
+    background-color: rgba(255, 131, 2, 0.66);
+}
+
+.transparent .tuyin
+	{
+	margin-top: 20px;
+	background-color: rgba(148, 148, 148, 0.12);
+	border: 1px solid #F7F7F7;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px 0px rgba(181, 181, 181, 0.3);
+	padding: 4%;
+	text-align: center;
+	width: 97%;
+	min-height: 315px;
+	position: relative;
+	margin-bottom: 25px;
+	 }
+.transparent .tuyin .title
+	{
+	text-align: center;
+	color: black;
+	font-size: 35px;
+	font-weight: 400;
+	}
+.transparent .tuyin .plan-name
+	{
+	font-size: 20px;
+	font-weight: 400;
+	border-bottom: 1px solid #FFF;
+	padding-bottom: 15px;
+	padding: 10px
+	}
+
+.transparent .tuyin .text
+	{
+	margin-top: 20px;
+	color: #474747;
+	font-weight: 300;
+	margin-bottom: 13px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.transparent .tuyin .text .link{
+    color: #df691a;
+}
+
+.transparent .tuyin .text li
+	{
+	text-align:left
+}
+.transparent .tuyin .btn{
+    border-radius: 4px;
+}
+
+.plan-name span{
+    font-size: 10px;
+    display: block;
+    margin-top: 5px;
+}
+
+.plan-name span a{
+    color : #df691a;
+}
+
+/*END CSS DOWNLOAD*/
+
+
+/* ----DEBUT CSS ABOUT ----*/
+
+#team {
+  background: white !important;
+}
+
+.transition {
+  transition: .3s cubic-bezier(.3, 0, 0, 1.3)
+}
+.transition {
+    overflow:hidden;
+    -webkit-border-radius:75px;
+    -moz-border-radius:75px;
+    border-radius:75px;
+    width:125px;
+    height:125px;
+}
+
+/* --------- Original authors --------- */
+
+.authors {
+  list-style: none;
+  padding: 0;
+  margin: 100px 0;
+}
+.authors > li {
+  background: #FFFFFF;
+  border: 1px solid rgba(150,150,150,0.29);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
+  box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
+  width: 300px;
+  height: 500px;
+  display: inline-block;
+  margin: 20px 20px;
+  text-align: center;
+}
+.authors > li img {
+  margin-top: 60px;
+}
+.authors > li:hover img {
+  margin-top: 30px;
+}
+.authors > li:hover {
+  -moz-box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
+  box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
+}
+.authors > li:hover span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  bottom: -400px;
+}
+.authors > li:hover h3 {
+  color: rgba(255,255,255,1);
+  margin-top: 25px;
+  font-size: 20px ;
+}
+.authors > li .wrapper {
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 510px;
+}
+.authors > li span {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  height: 470px;
+  width: 550px;
+  background:rgba(255, 131, 2, 0.66);
+  display: block;
+  position: absolute;
+  bottom: -300px;
+  left: -125px;
+}
+.authors > li span img {
+  margin-top: 10px;
+  width: 50px;
+}
+.authors > li span:hover {
+  background:rgba(255, 131, 2, 0.66);
+}
+.authors > li h3 {
+  margin-top: 40px;
+  color: rgba(255,255,255,1);
+  font-size: 20px;
+}
+.authors > li h3 em {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.authors .description {
+  list-style: none;
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 10px;
+}
+.authors .description li {
+  opacity: 0;
+  display: inline-block;
+  padding: 5px;
+}
+.authors > li:hover .description li {
+  opacity: 0.5;
+}
+.authors .description li a {
+  cursor: pointer;
+  display: block;
+}
+.authors .description li a:hover {
+  opacity: 0.5;
+}
+.authors .description li img {
+  width: 24px;
+}
+
+
+/* --------- Others constributors --------- */
+
+.constributors {
+  list-style: none;
+  padding: 0;
+  margin: 100px 0;
+}
+.constributors  > li {
+  background: #FFFFFF;
+  border: 1px solid rgba(150,150,150,0.29);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
+  box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
+  width: 250px;
+  height: 430px;
+  display: inline-block;
+  margin: 20px 20px;
+  text-align: center;
+}
+.constributors > li img {
+  margin-top: 60px;
+}
+.constributors > li:hover img {
+  margin-top: 30px;
+}
+.constributors > li:hover {
+  -moz-box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
+  box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
+}
+.constributors > li:hover span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  bottom: -400px;
+}
+.constributors > li:hover h3 {
+  color: rgba(255,255,255,1);
+  margin-top: 25px;
+}
+.constributors > li .wrapper {
+  overflow: hidden;
+  position: absolute;
+  width: 250px;
+  height: 430px;
+}
+.constributors > li span {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  background: rgba(255, 131, 2, 0.66);
+  display: block;
+  position: absolute;
+  bottom: -300px;
+  left: -125px;
+}
+.constributors > li span img {
+  margin-top: 10px;
+  width: 50px;
+}
+.constributors > li span:hover {
+  background:rgba(255, 131, 2, 0.66);
+}
+.constributors > li h3 {
+  margin-top: 40px;
+  color: rgba(255,255,255,1);
+}
+.constributors > li h3 em {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.constributors .description {
+  list-style: none;
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 10px;
+}
+.constributors .description li {
+  opacity: 0;
+  display: inline-block;
+  padding: 5px;
+}
+.constributors > li:hover .description li {
+  opacity: 0.5;
+}
+.constributors .description li a {
+  cursor: pointer;
+  display: block;
+}
+.constributors .description li a:hover {
+  opacity: 0.5;
+}
+.constributors .description li img {
+  width: 24px;
+}
+
+/* ----FIN CSS ABOUT ----*/
+
+
+/*-------------------------------------------------*/
+
+
+/* ----DEBUT CSS NEWS ----*/
+
+.releases {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.releases:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  content: '';
+  background-color: #004d6f;
+}
+
+.releases > li {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 50px;
+}
+
+.releases > li:after, .releases > li:before {
+  display: table;
+  content: ' ';
+}
+
+.releases > li:after {
+  clear: both;
+}
+
+.releases > li .releases-panel {
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.releases > li .releases-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.releases > li .releases-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.releases > li .releases-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+  border: 7px solid #e9ecef;
+  border-radius: 100%;
+  background-color: #feffeb;
+}
+
+.releases > li .releases-image h4 {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 12px;
+}
+
+.releases > li.releases-inverted > .releases-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.releases > li.releases-inverted > .releases-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.releases > li.releases-inverted > .releases-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.releases > li:last-child {
+  margin-bottom: 0;
+}
+
+.releases .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+.releases .releases-heading h4.subheading {
+  text-transform: none;
+}
+
+.releases .releases-body > ul,
+.releases .releases-body > p {
+  margin-bottom: 0;
+}
+
+/* ----FIN CSS NEWS ----*/
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 1200px) {
+  /*News*/
+  .releases > li {
+      min-height: 170px;
+  }
+  .releases > li .releases-panel {
+      padding: 0 20px 20px 100px;
+  }
+  .releases > li .releases-image {
+      width: 170px;
+      height: 170px;
+      margin-left: -85px;
+  }
+  .releases > li .releases-image h4 {
+      margin-top: 40px;
+  }
+  .releases > li.releases-inverted > .releases-panel {
+      padding: 0 100px 20px 20px;
+  }
+}
+@media (max-width : 1024px) {
+    /*Home*/
+    .parallax {
+        background-attachment: inherit;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-6 {
+        float: left;
+        width: 50%;
+        text-align: center;
+    }
+    .img{
+        padding: 0;
+    }
+    .releases > li {
+       min-height: 150px;
+    }
+    .releases > li .releases-panel {
+      padding: 0 20px 20px;
+    }
+      .releases > li .releases-image {
+          width: 150px;
+          height: 150px;
+          margin-left: -75px;
+      }
+      .releases > li .releases-image h4 {
+          font-size: 18px;
+          line-height: 26px;
+          margin-top: 30px;
+      }
+      .releases > li.releases-inverted > .releases-panel {
+          padding: 0 20px 20px;
+      }
+
+  .featurette-heading.news {
+    margin-top: 10px;
+    li.post {
+      font-size: 10em;
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+    .vertical-align{
+        display: block;
+    }
+    .large_content .flexbox h2{
+        width: 45%;
+        text-align: center;
+    }
+    .bloc_download{
+        padding: 0 15px;
+    }
+    .bloc_documentation{
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 768px) {
+  .releases:before {
+      left: 50%;
+  }
+  .releases > li {
+      min-height: 100px;
+      margin-bottom: 100px;
+  }
+  .releases > li .releases-panel {
+      float: left;
+      width: 41%;
+      padding: 0 20px 20px 30px;
+      text-align: right;
+  }
+  .releases > li .releases-image {
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      margin-left: -50px;
+  }
+  .releases > li .releases-image h4 {
+      font-size: 13px;
+      line-height: 18px;
+      margin-top: 16px;
+  }
+  .releases > li.releases-inverted > .releases-panel {
+      float: right;
+      padding: 0 30px 20px 20px;
+      text-align: left;
+  }
+
+  /*Home page*/
+    /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+  /*Nav*/
+  .navbar-nav>li>.dropdown-menu{
+    width: 800%;
+    border: 1px solid black;
+    background-color: #f2f2f2;
+  }
+
+  /*Download page*/
+  .btn-success{
+    font-size : 30px;
+  }
+}
+
+@media (max-width: 768px) {
+    /*Navbar*/
+    .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+    .nav>li>a{
+        display : table;
+    }
+    .navbar-nav{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .navbar-nav .open .dropdown-menu{
+        background-color: #4e5d6c;
+    }
+
+    /*Download*/
+    .btn-success{
+        font-size : 12px;
+    }
+    .btn-primary{
+        font-size: 9px;
+    }
+    /*Home*/
+    .jumbotron{
+         margin-left: 70px;
+        margin-right: 70px;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn-primary{
+        font-size: 5px;
+    }
+    .transparent .tuyin span{
+        font-size: 8px;
+    }
+    .transparent .tuyin .btn{
+        padding: 8px 2px;
+    }
+    .transparent .eight .text a{
+        font-size: 10px;
+    }
+}
+
+/*Responsive for card of footer*/
+@media screen and (max-width: 64rem){
+  .col{
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .col{
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}

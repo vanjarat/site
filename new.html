@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SARL is a general-purpose agent-oriented language.
+SARL aims at providing the fundamental abstractions for dealing with concurrency, distribution, interaction, decentralization, reactivity, autonomy and dynamic reconfiguration. These high-level features are now considered as the major requirements for an easy and practical implementation of modern complex software applications. We are convinced that the agent-oriented paradigm holds the keys to effectively meet this challenge.
+Considering the variety of existing approaches and meta-models in the field of agent-oriented engineering and more generally multi-agent systems, our approach remains as generic as possible and highly extensible to easily integrate new concepts and features. The language is platform- and architecture-independent.
+">
+    <meta name="author" content="SARL Team">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>SARL</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>-->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/licbs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+<!--Début Barre de menu-->
+<nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn btn-info btn-sm" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">
+                        <div class="icon-bar"></div>
+                        <div class="icon-bar"></div>
+                        <div class="icon-bar"></div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="/download.html">Download</a></li>
+                        <li><a href="#">Run-time</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="/new.html">News & Events</a></li>
+                        <li><a href="#">Publications & Presentations</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--End navbar menu-->
+
+<div class="container">
+    <a href="https://github.com/sarl/sarl" target="_blank"><img
+            style="position: absolute; top: 0; right: 0; border: 0;"
+            src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67"
+            alt="Fork me on GitHub"
+            data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+</div>
+<div class="row News">
+    <!-- Title -->
+    <h1 class="col-lg-12 text-center">Latest News</h1>
+    <div class="col-lg-12 ">
+        <ul class="releases">
+            <!-- Premier élément de la liste à gauche-->
+            <li>
+                <div class="releases-image">
+                    <img class="rounded-circle img-fluid" src="images/SARL-logo.png"> <!-- image au centre -->
+                </div>
+                <div class="releases-panel">
+                    <h2 class="releases-title">
+                        <a href="http://www.sarl.io//news/2018/03/12/release-0.7.1.html">
+                            Release 0.7.1
+                        </a>
+                    </h2>
+                    <p>
+                        <i class="glyphicon glyphicon-calendar"></i>&nbsp;
+                        <time datetime="2018-03-12T00:00:00+01:00" pubdate="" data-updated="true">March 12, 2018</time>
+                        <i class="glyphicon glyphicon-user"></i>&nbsp; SARL Team -
+                        <i class="glyphicon glyphicon-folder-close"></i>&nbsp;
+
+                        <span class="categories">Releases
+                        </span>
+                    </p>
+                    <div class="entry-content">
+                        <p>The version 0.7.1 of SARL is released. <a
+                                href="http://www.sarl.io/download/changes_0.7.1.html">Changes</a>. It is a minor
+                            release.</p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Deuxième élément de la liste à droite-->
+
+            <li class="releases-inverted">
+                <div class="releases-image">
+                    <img class="rounded-circle img-fluid" src="images/SARL-logo.png"> <!-- image au centre -->
+                </div>
+                <div class="releases-panel">
+                    <h2 class="releases-title">
+                        <a href="http://www.sarl.io//news/2018/02/22/release-0.7.0.html">
+                            Release 0.7.0
+                        </a>
+                    </h2>
+                    <p class="meta">
+                        <i class="glyphicon glyphicon-calendar"></i>&nbsp;
+
+                        <time datetime="2018-02-22T00:00:00+01:00" pubdate="" data-updated="true">February 22, 2018
+                        </time>
+                        <i class="glyphicon glyphicon-user"></i>&nbsp; SARL Team -
+                        <i class="glyphicon glyphicon-folder-close"></i>&nbsp;
+
+                        <span class="categories">
+                                Releases
+                            </span>
+                    </p>
+                    <div class="entry-content">
+                        <p>The version 0.7.0 of SARL is released. <a
+                                href="http://www.sarl.io/download/changes_0.7.0.html">Changes</a>. It is a major
+                            release.</p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Troisième élément de la liste à gauche -->
+            <li>
+                <div class="releases-image">
+                    <img class="rounded-circle img-fluid" src="images/SARL-logo.png"> <!-- image au centre -->
+                </div>
+                <div class="releases-panel">
+                    <h2 class="releases-title">
+                        <a href="http://www.sarl.io//news/2017/10/20/release-0.6.1.html">
+                            Release 0.6.1
+                        </a>
+                    </h2>
+                    <p class="meta">
+                        <i class="glyphicon glyphicon-calendar"></i>&nbsp;
+                        <time datetime="2017-10-20T00:00:00+02:00" pubdate="" data-updated="true">October 20, 2017
+                        </time>
+                        <i class="glyphicon glyphicon-user"></i>&nbsp; SARL Team -
+                        <i class="glyphicon glyphicon-folder-close"></i>&nbsp;
+
+                        <span class="categories">
+                            Releases
+                        </span>
+                    </p>
+                    <div class="entry-content">
+                        <p>The version 0.6.1 of SARL is released. <a
+                                href="http://www.sarl.io/download/changes_0.6.1.html">Changes</a>.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Quatrième élément de la liste à droite -->
+
+            <li class="releases-inverted">
+                <div class="releases-image">
+                    <img class="rounded-circle img-fluid" src="images/SARL-logo.png"> <!-- image au centre -->
+                </div>
+                <div class="releases-panel">
+                    <h2 class="releases-title">
+                        <a href="http://www.sarl.io//news/2017/10/10/sarl-18-workshop.html">
+                            SARL-18 Workshop
+                        </a>
+                    </h2>
+                    <p class="meta">
+                        <i class="glyphicon glyphicon-calendar"></i>&nbsp;
+                        <time datetime="2017-10-10T00:00:00+02:00" pubdate="" data-updated="true">October 10, 2017
+                        </time>
+                        <i class="glyphicon glyphicon-user"></i>&nbsp; SARL Team -
+                        <i class="glyphicon glyphicon-folder-close"></i>&nbsp;
+                        <span class="categories">
+                                news
+                            </span>
+                    </p>
+                    <div class="entry-content">
+                        <p>The <a href="https://easychair.org/cfp/SARL-18">Call-for-Papers</a> of the 2nd International
+                            Workshop on Agent-based Modeling and Applications with SARL is available.</p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Cinquième élément de la liste à gauche -->
+            <li>
+                <div class="releases-image">
+                    <img class="rounded-circle img-fluid" src="images/SARL-logo.png">
+                </div>
+                <div class="releases-panel">
+                    <h2 class="releases-title">
+                        <a href="http://www.sarl.io//news/2017/09/14/release-0.6.0.html">
+                            Release 0.6.0
+                        </a>
+                    </h2>
+                    <p class="meta">
+                        <i class="glyphicon glyphicon-calendar"></i>&nbsp;
+                        <time datetime="2017-09-14T00:00:00+02:00" pubdate="" data-updated="true">September 14, 2017
+                        </time>
+                        <i class="glyphicon glyphicon-user"></i>&nbsp; SARL Team -
+                        <i class="glyphicon glyphicon-folder-close"></i>&nbsp;
+                        <span class="categories">
+                                    Releases
+                                </span>
+                    </p>
+                    <div class="entry-content">
+                        <p>The version 0.6.0 of SARL is released. <a
+                                href="http://www.sarl.io/download/changes_0.6.0.html">Changes</a>. It is a major
+                            release.</p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Sixième élément de la liste à droite -->
+
+            <li class="releases-inverted">
+                <div class="releases-image">
+                    <img class="rounded-circle img-fluid" src="images/SARL-logo.png">
+                </div>
+                <div class="releases-panel">
+                    <h2 class="entry-title">
+                        <a href="http://www.sarl.io//news/2017/08/28/release-0.5.8.html">
+                            Release 0.5.8
+                        </a>
+                    </h2>
+                    <p class="meta">
+                        <i class="glyphicon glyphicon-calendar"></i>&nbsp;
+                        <time datetime="2017-08-28T00:00:00+02:00" pubdate="" data-updated="true">August 28, 2017</time>
+                        <i class="glyphicon glyphicon-user"></i>&nbsp; SARL Team -
+                        <i class="glyphicon glyphicon-folder-close"></i>&nbsp;
+                        <span class="categories">
+                            Releases
+                        </span>
+                    </p>
+                    <div class="entry-content">
+                        <p>The version 0.5.8 of SARL is released. <a
+                                href="http://www.sarl.io/download/changes_0.5.8.html">Changes</a>.</p>
+
+                    </div>
+                </div>
+            </li>
+
+            <!-- Septième élément de la liste à gauche -->
+            <li>
+                <div class="releases-image">
+                    <img class="rounded-circle img-fluid" src="images/SARL-logo.png"> <!-- image au centre -->
+                </div>
+                <div class="releases-panel">
+                    <h2 class="releases-title">
+                        <a href="http://www.sarl.io//news/2017/08/22/debian-packages.html">
+                            Debian Packages
+                        </a>
+                    </h2>
+                    <p class="meta">
+                        <i class="glyphicon glyphicon-calendar"></i>&nbsp;
+                        <time datetime="2017-08-22T00:00:00+02:00" pubdate="" data-updated="true">August 22, 2017</time>
+                        <i class="glyphicon glyphicon-user"></i>&nbsp; SARL Team -
+                        <i class="glyphicon glyphicon-folder-close"></i>&nbsp;
+                        <span class="categories">
+                                news
+                            </span>
+                    </p>
+                    <div class="entry-content">
+                        <p>The SARL command-line compiler and the Janus framework launching tool are now packaged for
+                            the Debian and Ubuntu operating systems. See the <a
+                                    href="http://www.sarl.io/download/index.html">Download page</a> for details.</p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Huitième élément de la liste à droite -->
+
+            <li class="releases-inverted">
+                <div class="releases-image">
+                    <img class="rounded-circle img-fluid" src="images/SARL-logo.png"> <!-- image au centre -->
+                </div>
+                <div class="releases-panel">
+                    <h2 class="releases-title">
+                        <a href="http://www.sarl.io//news/2017/08/15/release-0.5.7.html">
+                            Release 0.5.7
+                        </a>
+                    </h2>
+                    <p class="meta">
+                        <i class="glyphicon glyphicon-calendar"></i>&nbsp;
+                        <time datetime="2017-08-15T00:00:00+02:00" pubdate="" data-updated="true">August 15, 2017</time>
+                        <i class="glyphicon glyphicon-user"></i>&nbsp; SARL Team -
+                        <i class="glyphicon glyphicon-folder-close"></i>&nbsp;
+                        <span class="categories">
+                                Releases
+                            </span>
+                    </p>
+                    <div class="entry-content">
+                        <p>The version 0.5.7 of SARL is released. <a
+                                href="http://www.sarl.io/download/changes_0.5.7.html">Changes</a>.</p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- pour ajouter un nouvel element à la liste -->
+
+            <li><!-- Nouvel element // pour placer l'élément à droite, ajouter "class="releases-inverted"-->
+                <div class="releases-image"> <!-- l'image qui se place au milieu -->
+                    <img class="rounded-circle img-fluid" src="images/SARL-logo.png">
+                    <!-- remplacer le lien de l'image dans src="" par celle que vous voulez -->
+                </div>
+                <div class="releases-panel">  <!-- placer le texte à coter de l'image ici -->
+                    <h2 class="releases-title">
+                        <a href="http://www.sarl.io//news/2017/06/01/we-are-on-facebook.html">We are on Facebook
+                        </a>
+                    </h2>
+                    <p class="meta">
+                        <i class="glyphicon glyphicon-calendar"></i>&nbsp;
+                        <time datetime="2017-06-01T00:00:00+02:00" pubdate="" data-updated="true">June 01, 2017</time>
+                        <i class="glyphicon glyphicon-user"></i>&nbsp; SARL Team -
+                        <i class="glyphicon glyphicon-folder-close"></i>&nbsp;
+                        <span class="categories">news</span>
+                    </p>
+                    <div class="entry-content">
+                        <p>The SARL language has a dedicated page on <a href="https://www.facebook.com/sarllanguage">Facebook</a>.
+                        </p>
+                    </div>
+                </div>
+
+            <li class="releases-inverted">
+                <div class="releases-image">
+                    <img class="rounded-circle img-fluid" src="images/SARL-logo.png"> <!-- image au centre -->
+                </div>
+                <div class="releases-panel">
+                    <h2 class="releases-title">
+                        <a href="http://www.sarl.io//news/2017/04/24/release-0.5.6.html">
+                            Release 0.5.6
+                        </a>
+                    </h2>
+                    <p class="meta">
+                        <i class="glyphicon glyphicon-calendar"></i>&nbsp;
+                        <time datetime="2017-08-15T00:00:00+02:00" pubdate="" data-updated="true">August 15, 2017</time>
+                        <i class="glyphicon glyphicon-user"></i>&nbsp; SARL Team -
+                        <i class="glyphicon glyphicon-folder-close"></i>&nbsp;
+                        <span class="categories">
+                                        Releases
+                                    </span>
+                    </p>
+                    <div class="entry-content">
+                        <p>The version 0.5.6 of SARL is released. <a
+                                href="http://www.sarl.io/download/changes_0.5.6.html">Changes</a>.</p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- nouvel element à la liste -->
+
+        </ul>
+    </div>
+</div>
+<!-- End Latest news-->
+
+
+<!--CARD footer of the page-->
+<!--4 card all with one front and one back-->
+<div class="wrapper-card">
+    <div class="cols">
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-card">
+                <div class="front-card">
+                    <div class="inner">
+                        <p>SARL</p>
+                        <span>Agent-Oriented Programming Language</span>
+                    </div>
+                </div>
+                <div class="back-card">
+                    <div class="inner">
+                        <img src="images/SARL-logo.png" style="width:30%;max-width:64px;"/><br/>
+                        <small><a href="images/SARL-logo.png">png</a>&nbsp;&middot;&nbsp;<a href="images/SARL-logo.svg">svg</a>
+                        </small>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-card">
+                <div class="front-card">
+                    <div class="inner">
+                        <p><i class="glyphicon glyphicon-th-large"></i> Quick Links</p>
+                    </div>
+                </div>
+                <div class="back-card">
+                    <div class="inner">
+                        <p>
+                            <a href="../../../news/index.html">
+                                <i class="fa fa-feed"></i> News
+                            </a>
+                            <br><br>
+                            <a href="../../../about/index.html">
+                                <i class="fa fa-info"></i> About
+                            </a>
+                            <br><br>
+                            <a href="../../../about/index.html#license">
+                                <i class="fa fa-legal"></i> License
+                            </a><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-card">
+                <div class="front-card">
+                    <div class="inner">
+                        <p><i class="glyphicon glyphicon-cog"></i> Support</p>
+                    </div>
+                </div>
+                <div class="back-card">
+                    <div class="inner">
+                        <p>
+                            <a href="../../../community/forums.html">
+                                <i class="fa fa-comments"></i> User Forums
+                            </a>
+                            <br><br>
+                            <a href="https://gitter.im/sarl/Lobby" target="_blank">
+                                <i class="fa fa-wechat"></i> Chat Room
+                            </a>
+                            <br><br>
+                            <a href="https://github.com/sarl/sarl" target="_blank">
+                                <i class="fa fa-github"></i> GitHub
+                            </a>
+                            <br><br>
+                            <a href="https://github.com/sarl/sarl/issues" target="_blank">
+                                <i class="fa fa-bug"></i> Report an Issue
+                            </a>
+                            <br><br>
+                            <a href="https://www.facebook.com/sarllanguage" target="_blank">
+                                <i class="fa fa-facebook"></i> Facebook
+                            </a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-card">
+                <div class="front-card">
+                    <div class="inner">
+                        <p><i class="glyphicon glyphicon-link"></i> Links</p>
+                    </div>
+                </div>
+                <div class="back-card">
+                    <div class="inner">
+                        <p>
+                            <a href="http://www.janusproject.io" target="_blank"><i class="fa fa-gears"></i> Janus
+                                Project</a>
+                            <br><br>
+                            <a href="http://www.gitia.org" target="_blank"><i class="fa fa-university"></i> GITIA - FRT
+                                - UTN</a>
+                            <br><br>
+                            <a href="http://www.multiagent.fr" target="_blank"><i class="fa fa-university"></i> MAS
+                                Group - LE2I - UBFC</a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/run_prettify.js"></script>
+
+</body>
+
+</html>
